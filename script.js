@@ -18,6 +18,12 @@ var factories = 0;
 var factoryInterval;
 var factoryCookieAmount = 25;
 var factoryCookies = factories * factoryCookieAmount;
+var opacityScale = 0;
+var upgradebtn = document.getElementById("upgradebtn");
+var grandmabtn = document.getElementById("grandmalol");
+var chefbtn = document.getElementById("chef");
+var factorybtn = document.getElementById("factory");
+var showUpgrades = document.getElementById("showUpgrades");
 
 /* the grandma do be dien*/
 function addcookie()
@@ -114,11 +120,32 @@ function factory() {
 function factoryIntervalFunc() {
   factoryInterval = setInterval(factoryNum, 1000)
 }
-
+/* do kill the factory workers please*/
 function factoryNum() {
   factoryCookies = factories * factoryCookieAmount;
   cookiesNum += factoryCookies;
   cookies.innerHTML = cookiesNum + " Cookies";
 }
+
+function showAllUpgrades() {
+  if (opacityScale == 0) {
+    opacityScale = 1;
+    upgradebtn.style.opacity = 1;
+    grandmabtn.style.opacity = 1;
+    chefbtn.style.opacity = 1;
+    factorybtn.style.opacity = 1;
+    showUpgrades.innerHTML = "Close All Upgrades..";
+  
+  } else {
+    opacityScale = 0;
+    upgradebtn.style.opacity = 0;
+    grandmabtn.style.opacity = 0;
+    chefbtn.style.opacity = 0;
+    factorybtn.style.opacity = 0;
+    showUpgrades.innerHTML = "Open All Upgrades..";
+  }
+}
+
+
 /*dont kill the chefs either*/
 /*actualy do kill the chefs and my grandmas*/

@@ -20,6 +20,7 @@ body{
   animation-iteration-count: 100;
   background: gray;
   margin: 0px;
+  opacity: 0;
 }
 #upgradebtn:hover{
   background-color: rgb(56, 56, 56);
@@ -53,6 +54,7 @@ body{
   color: orange;
   background: gray;
   margin: 0px;
+  opacity: 0;
 }
 
 #grandmalol:hover{
@@ -76,6 +78,7 @@ body{
   color: rgb(0, 255, 55);
   background: gray;
   margin: 0px;
+  opacity: 0;
 }
 
 #chef:hover{
@@ -102,6 +105,7 @@ h1{
   color: blue;
   background: gray;
   margin: 0px;
+  opacity: 0;
 }
 
 #factory:hover{
@@ -111,4 +115,42 @@ h1{
 }
 #factory:active{
   background-color: black;
+}
+#showUpgrades{
+  font-size: 35px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  animation-name: purplegradient;
+  animation-duration: 3s;
+  animation-iteration-count: 1000;
+  background: gray;
+  margin: 0px;
+}
+
+#showUpgrades:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#showUpgrades:active{
+  background-color: black;
+}
+
+@keyframes purplegradient{
+  0% {color: purple;}
+  50% {color: rgb(185, 0, 185);}
+  100% {color: purple;}
+}
+
+#homebutton{
+    padding: 5px;
+  background: rgb(175, 114, 0);
+  border: 2px solid orange;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
 }
