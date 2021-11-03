@@ -1,5 +1,5 @@
 var cookies = document.getElementById("cookies");
-var cookiesNum = 1000;
+var cookiesNum = 0;
 var cookieimg = document.getElementById("cookie");
 var upgrade = 1;
 var upgradebutton = document.getElementById("upgradebtn");
