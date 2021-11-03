@@ -2,8 +2,9 @@ body{
   text-align: center;
   font-family: Comic Sans MS;
   font-weight: bold;
-  background-image: url(tw.jpeg);
+  background-image: url("tw.jpg");
   color: red;
+  background-repeat: 0;
 }
 
 #upgradebtn{
