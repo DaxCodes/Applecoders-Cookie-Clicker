@@ -1,7 +1,4 @@
 # Cookie Clicker
-
-Thank you for downloading our cookie clicker!
-
 Created By:
 @sqcodes
 @DaxCodes
