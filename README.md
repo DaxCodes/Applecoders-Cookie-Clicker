@@ -1,13 +1,15 @@
 # Cookie Clicker
+## **PLEASE READ THIS OR THE GAME WON'T WORK!!**
+
+To run the game: ***Open the index.html***
+
+If you DO NOT open ***index.html***, you won't get what you want.
+
+That is all!
+
 Created By:
 @sqcodes
 @DaxCodes
 
-or @AppleCoders.
 
-You can download this Cookie Clicker zip from GitHub at https://github.com/DaRedDeveloper/Cookie-Clicker. (Make sure to extract the zip!)
-
-NOTE: If you are downloading this, this project is work in progress so more updates in the GitHub site will accure.
-
-That is all!
 
