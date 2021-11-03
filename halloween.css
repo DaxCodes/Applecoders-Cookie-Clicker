@@ -82,3 +82,24 @@ body{
 #chef:active{
   background-color: black;
 }
+
+#factory{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: blue;
+  background: gray;
+  margin: 0px;
+}
+
+#factory:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#factory:active{
+  background-color: black;
+}

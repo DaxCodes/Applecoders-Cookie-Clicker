@@ -1,5 +1,5 @@
 var cookies = document.getElementById("cookies");
-var cookiesNum = 0;
+var cookiesNum = 1000;
 var cookieimg = document.getElementById("cookie");
 var upgrade = 1;
 var upgradebutton = document.getElementById("upgradebtn");
@@ -13,8 +13,13 @@ var chefs = 0;
 var chefInterval;
 var chefcookieAmount = 5;
 var chefcookies = chefs * chefcookieAmount;
+var factoryAmount = 1000;
+var factories = 0;
+var factoryInterval;
+var factoryCookieAmount = 25;
+var factoryCookies = factories * factoryCookieAmount;
 
-
+/* the grandma do be dien*/
 function addcookie()
 {
   cookiesNum += upgrade;
@@ -87,6 +92,32 @@ function chefIntervalFunc() {
 function chefNum() {
   chefcookies = chefs * chefcookieAmount;
   cookiesNum += chefcookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+
+function factory() {
+  if (cookiesNum == factoryAmount) {
+    cookiesNum -= factoryAmount;
+    factories += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    factoryIntervalFunc()
+  }
+  if (cookiesNum >= factoryAmount)
+  {
+    cookiesNum -= factoryAmount;
+    factories += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    factoryIntervalFunc()
+  }
+}
+
+function factoryIntervalFunc() {
+  factoryInterval = setInterval(factoryNum, 1000)
+}
+
+function factoryNum() {
+  factoryCookies = factories * factoryCookieAmount;
+  cookiesNum += factoryCookies;
   cookies.innerHTML = cookiesNum + " Cookies";
 }
 /*dont kill the chefs either*/
