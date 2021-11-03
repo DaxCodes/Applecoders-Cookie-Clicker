@@ -2,8 +2,9 @@ body{
   text-align: center;
   font-family: Comic Sans MS;
   font-weight: bold;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG613WP3cAoXBrvk8UU0LJ4LwGB74ue2SYRg&usqp=CAU);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74MuAx-0dj_dAYwieElgsRb-j6Wx3Nzxzuw&usqp=CAU);
   color: red;
+  background-size: cover;
 }
 
 #upgradebtn{

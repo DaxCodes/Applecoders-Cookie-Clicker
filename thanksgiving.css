@@ -3,8 +3,9 @@ body{
   font-family: Comic Sans MS;
   font-weight: bold;
   background-image: url("tw.jpg");
-  color: red;
-  background-repeat: 0;
+  background-size: cover;
+  color: orange;
+  
 }
 
 #upgradebtn{
@@ -29,6 +30,9 @@ body{
 #cookie{
   margin: 0px;
   padding: 0px;
+  background: rgb(173, 55, 0);
+  border: 5px solid black;
+  border-radius: 5px;
 }
 
 @keyframes chroma{
@@ -81,4 +85,9 @@ body{
 }
 #chef:active{
   background-color: black;
+}
+h1{
+  background-color: rgb(184, 52, 0);
+  border: 5px solid black;
+
 }
