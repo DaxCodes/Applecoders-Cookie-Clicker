@@ -1,5 +1,5 @@
 var cookies = document.getElementById("cookies");
-var cookiesNum = 1000;
+var cookiesNum = 0;
 var cookieimg = document.getElementById("cookie");
 var upgrade = 1;
 var upgradebutton = document.getElementById("upgradebtn");
@@ -24,8 +24,14 @@ var grandmabtn = document.getElementById("grandmalol");
 var chefbtn = document.getElementById("chef");
 var factorybtn = document.getElementById("factory");
 var showUpgrades = document.getElementById("showUpgrades");
+var highspeedbtn = document.getElementById("HighSpeedProcessor");
+var processorAmount = 1500;
+var processors = 0;
+var processorInterval;
+var processorCookieAmount = 50;
+var processorCookies = processors * processorCookieAmount;
 
-/* the grandma do be dien*/
+
 function addcookie()
 {
   cookiesNum += upgrade;
@@ -120,7 +126,7 @@ function factory() {
 function factoryIntervalFunc() {
   factoryInterval = setInterval(factoryNum, 1000)
 }
-/* do kill the factory workers please*/
+
 function factoryNum() {
   factoryCookies = factories * factoryCookieAmount;
   cookiesNum += factoryCookies;
@@ -134,6 +140,7 @@ function showAllUpgrades() {
     grandmabtn.style.opacity = 1;
     chefbtn.style.opacity = 1;
     factorybtn.style.opacity = 1;
+    highspeedbtn.style.opacity = 1;
     showUpgrades.innerHTML = "Close All Upgrades..";
   
   } else {
@@ -142,10 +149,34 @@ function showAllUpgrades() {
     grandmabtn.style.opacity = 0;
     chefbtn.style.opacity = 0;
     factorybtn.style.opacity = 0;
-    showUpgrades.innerHTML = "Open All Upgrades..";
+    highspeedbtn.style.opacity = 1;
+    showUpgrades.innerHTML = "Open All Upgrades...";
   }
 }
 
+function processor() {
+  if (cookiesNum == processorAmount) {
+    cookiesNum -= processorAmount;
+    processors += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    processorIntervalFunc()
+  }
+  if (cookiesNum >= processorAmount)
+  {
+    cookiesNum -= processorAmount;
+    processors += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    processorIntervalFunc()
+  }
+}
 
-/*dont kill the chefs either*/
-/*actualy do kill the chefs and my grandmas*/
+function processorIntervalFunc() {
+  processorInterval = setInterval(processorNum, 1000)
+}
+
+function processorNum() {
+  processorCookies = processors * processorCookieAmount;
+  cookiesNum += processorCookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+
