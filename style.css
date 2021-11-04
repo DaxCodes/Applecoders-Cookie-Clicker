@@ -2,7 +2,8 @@ body{
   text-align: center;
   font-family: Comic Sans MS;
   font-weight: bold;
-  background-color: cyan;
+  background-image: url("https://wallpaperaccess.com/full/1719733.png");
+  background-size: cover;
 }
 
 #upgradebtn{
