@@ -1,15 +1,18 @@
 # Cookie Clicker
 ## **PLEASE READ THIS OR THE GAME WON'T WORK!!**
 
-To run the game: ***Open the index.html in the browser***
+TO RUN THE GAME:
 
-If you DO NOT open ***index.html*** or you open it in a text editing software, you won't get what you want.
+1. Right-Click the **index.html** file.
+2. Click "Open With.." and choose Google Chrome
+--------------------------------------------------
 
 That is all!
 
-Created By:
-@sqcodes
-@DaxCodes
+Credit:
+
+DaxCodes/DaRedDeveloper: https://replit.com/@DaxCodes
+sqcodes: https://replit.com/@sqcodes
 
 
 
