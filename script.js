@@ -149,7 +149,7 @@ function showAllUpgrades() {
     grandmabtn.style.opacity = 0;
     chefbtn.style.opacity = 0;
     factorybtn.style.opacity = 0;
-    highspeedbtn.style.opacity = 1;
+    highspeedbtn.style.opacity = 0;
     showUpgrades.innerHTML = "Open All Upgrades...";
   }
 }
