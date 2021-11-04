@@ -30,6 +30,13 @@ var processors = 0;
 var processorInterval;
 var processorCookieAmount = 50;
 var processorCookies = processors * processorCookieAmount;
+var hackerbtn = document.getElementById("CookieHacker");
+var hackerAmount = 2000;
+var hackers = 0;
+var hackerInterval;
+var hackerCookieAmount = 150;
+var hackerCookies = hackers * hackerCookieAmount;
+
 
 
 function addcookie()
@@ -141,6 +148,7 @@ function showAllUpgrades() {
     chefbtn.style.opacity = 1;
     factorybtn.style.opacity = 1;
     highspeedbtn.style.opacity = 1;
+    hackerbtn.style.opacity = 1;
     showUpgrades.innerHTML = "Close All Upgrades..";
   
   } else {
@@ -150,6 +158,7 @@ function showAllUpgrades() {
     chefbtn.style.opacity = 0;
     factorybtn.style.opacity = 0;
     highspeedbtn.style.opacity = 0;
+    hackerbtn.style.opacity = 0;
     showUpgrades.innerHTML = "Open All Upgrades...";
   }
 }
@@ -177,6 +186,32 @@ function processorIntervalFunc() {
 function processorNum() {
   processorCookies = processors * processorCookieAmount;
   cookiesNum += processorCookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+
+function hacker() {
+  if (cookiesNum == hackerAmount) {
+    cookiesNum -= hackerAmount;
+    hackers += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    hackerIntervalFunc()
+  }
+  if (cookiesNum >= hackerAmount)
+  {
+    cookiesNum -= hackerAmount;
+    hackers += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    hackerIntervalFunc()
+  }
+}
+
+function hackerIntervalFunc() {
+  hackerInterval = setInterval(hackerNum, 1000)
+}
+
+function hackerNum() {
+  hackerCookies = hackers * hackerCookieAmount;
+  cookiesNum += hackerCookies;
   cookies.innerHTML = cookiesNum + " Cookies";
 }
 
