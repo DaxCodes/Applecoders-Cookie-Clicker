@@ -138,12 +138,14 @@ body{
 }
 
 #homebutton{
-    padding: 5px;
+  padding: 5px;
   background: rgb(175, 114, 0);
   border: 2px solid orange;
   margin: 5px;
   border-radius: 5px;
   text-decoration: none;
+  font-family: Comic Sans MS;
+  font-weight: bold;
 }
 #HighSpeedProcessor{
   font-size: 25px;
@@ -164,5 +166,27 @@ body{
   margin: 0px;
 }
 #HighSpeedProcessor:active{
+  background-color: black;
+}
+
+#CookieHacker{
+    font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(255, 0, 0);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#CookieHacker:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#CookieHacker:active{
   background-color: black;
 }

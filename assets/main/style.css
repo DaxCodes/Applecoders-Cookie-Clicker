@@ -196,3 +196,7 @@ color: red;
   border-radius: 10px;
   margin: 0px;
 }
+
+#CookieHacker:active{
+  background-color: black;
+}
