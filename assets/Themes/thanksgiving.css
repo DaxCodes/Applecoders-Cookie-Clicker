@@ -32,7 +32,7 @@ body{
   padding: 0px;
   background: rgb(173, 55, 0);
   border: 5px solid black;
-  border-radius: 5px;
+  border-radius: 1000px;
 }
 
 @keyframes chroma{
