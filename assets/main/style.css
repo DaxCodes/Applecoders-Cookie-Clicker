@@ -162,7 +162,7 @@ color: red;
   background-color: black;
 }
 #CookieHacker{
-    font-size: 25px;
+  font-size: 25px;
   font-family: Comic Sans MS;
   font-weight: bold;
   text-align: center;
@@ -180,5 +180,48 @@ color: red;
 }
 
 #CookieHacker:active{
+  background-color: black;
+}
+
+#robot{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(255, 111, 219);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#robot:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#robot:active{
+  background-color: black;
+}
+#robot2{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(111, 197, 255);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#robot2:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#robot2:active{
   background-color: black;
 }

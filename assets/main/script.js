@@ -1,5 +1,7 @@
 var cookies = document.getElementById("cookies");
-var cookiesNum = 0;
+var cookiesNum = 10000; /* Use this for Changing Cookie Value! */
+cookies.innerHTML = cookiesNum + " Cookies";
+
 var cookieimg = document.getElementById("cookie");
 var upgrade = 1;
 var upgradebutton = document.getElementById("upgradebtn");
@@ -38,6 +40,18 @@ var hackerCookieAmount = 150;
 var hackerCookies = hackers * hackerCookieAmount;
 var halloweentheme = document.getElementById("halloweenbutton");
 var thanksgivingtheme = document.getElementById("thanksgiving");
+var robotbtn = document.getElementById("robot");
+var robotAmount = 5000;
+var robots = 0;
+var robotInterval;
+robotCookieAmount = 500;
+var robotCookies = robots * robotCookieAmount;
+var robot2btn = document.getElementById("robot2");
+var robot2Amount = 10000;
+var robots2 = 0;
+var robot2Interval;
+robot2CookieAmount = 1000;
+var robot2Cookies = robots2 * robot2CookieAmount;
 
 
 function addcookie()
@@ -150,6 +164,8 @@ function showAllUpgrades() {
     factorybtn.style.opacity = 1;
     highspeedbtn.style.opacity = 1;
     hackerbtn.style.opacity = 1;
+    robotbtn.style.opacity = 1;
+    robot2btn.style.opacity = 1;
     showUpgrades.innerHTML = "Close All Upgrades..";
   
   } else {
@@ -160,6 +176,8 @@ function showAllUpgrades() {
     factorybtn.style.opacity = 0;
     highspeedbtn.style.opacity = 0;
     hackerbtn.style.opacity = 0;
+    robotbtn.style.opacity = 0;
+    robot2btn.style.opacity = 0;
     showUpgrades.innerHTML = "Open All Upgrades...";
   }
 }
@@ -216,3 +234,55 @@ function hackerNum() {
   cookies.innerHTML = cookiesNum + " Cookies";
 }
 
+function robot() {
+  if (cookiesNum == robotAmount) {
+    cookiesNum -= robotAmount;
+    robots += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    robotIntervalFunc()
+  }
+  if (cookiesNum >= robotAmount)
+  {
+    cookiesNum -= robotAmount;
+    robots += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    robotIntervalFunc()
+  }
+}
+
+function robotIntervalFunc() {
+  robotInterval = setInterval(robotNum, 1000)
+}
+
+function robotNum() {
+  robotCookies = robots * robotCookieAmount;
+  cookiesNum += robotCookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+
+function robot2() {
+  if (cookiesNum == robot2Amount) {
+    cookiesNum -= robot2Amount;
+    robots2 += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    robot2IntervalFunc()
+  }
+  if (cookiesNum >= robot2Amount)
+  {
+    cookiesNum -= robot2Amount;
+    robots2 += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    robot2IntervalFunc()
+  }
+}
+
+function robot2IntervalFunc() {
+  robot2Interval = setInterval(robot2Num, 1000)
+}
+
+function robot2Num() {
+  robot2Cookies = robots2 * robot2CookieAmount;
+  cookiesNum += robot2Cookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+alert("u have fun please")
