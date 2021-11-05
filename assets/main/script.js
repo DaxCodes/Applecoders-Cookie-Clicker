@@ -216,32 +216,3 @@ function hackerNum() {
   cookies.innerHTML = cookiesNum + " Cookies";
 }
 
-function halloweenbtn() {
-  var answer = window.confirm("WARNING: Clicking OK will redirect you to the theme, but all your data will be lost!");
-  if (answer) {
-    window.location.replace("/assets/Themes/halloween.html");
-  }
-  else {
-    console.log("Cancelled");
-  }
-}
-
-function thanksgivingbtn() {
-  var answer = window.confirm("WARNING: Clicking OK will redirect you to the theme, but all your data will be lost!");
-  if (answer) {
-    window.location.replace("/assets/Themes/thanksgiving.html");
-  }
-  else {
-    console.log("Cancelled");
-  }
-}
-
-function homebutton() {
-  var answer = window.confirm("WARNING: Clicking OK will redirect you to the Regular Theme, but all your progress will be lost!");
-  if (answer) {
-    window.location.replace("https://Cookie-Clicker.applecoders.repl.co");
-  }
-  else {
-    console.log("Cancelled");
-  }
-}

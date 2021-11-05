@@ -61,17 +61,6 @@ body{
   background-color: black;
 }
 
-#halloweenbutton{
-  padding: 5px;
-  background: rgb(175, 114, 0);
-  border: 2px solid orange;
-  margin: 50px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-#halloweenbutton:hover{
-  background-image: url();
-}
 
 #chef{
   font-size: 25px;
@@ -94,14 +83,7 @@ body{
 #chef:active{
   background-color: black;
 }
-#thanksgiving{
-  padding: 5px;
-  background: yellow;
-  border: 2px solid green;
-  margin: 50px;
-  border-radius: 5px;
-  text-decoration: none;
-}
+
 
 #factory{
   font-size: 25px;
