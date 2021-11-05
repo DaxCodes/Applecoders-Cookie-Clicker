@@ -1,5 +1,5 @@
 var cookies = document.getElementById("cookies");
-var cookiesNum = 10000; /* Use this for Changing Cookie Value! */
+var cookiesNum = 0; /* Use this for Changing Cookie Value! */
 cookies.innerHTML = cookiesNum + " Cookies";
 
 var cookieimg = document.getElementById("cookie");
@@ -285,4 +285,3 @@ function robot2Num() {
   cookiesNum += robot2Cookies;
   cookies.innerHTML = cookiesNum + " Cookies";
 }
-alert("u have fun please")
