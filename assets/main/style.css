@@ -225,3 +225,28 @@ color: red;
 #robot2:active{
   background-color: black;
 }
+
+#thanks{
+  background: green;
+  color: black;
+  border: 3px solid orange;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#thanks:hover{
+  background: darkgreen;
+}
+#halloween{
+  background: black;
+  color: white;
+  border: 3px solid orange;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#halloween:hover{
+  background: rgb(100, 65, 0);
+}

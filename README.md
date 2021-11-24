@@ -9,7 +9,6 @@ TO RUN THE GAME:
 
 That is all!
 --------------------------------------------------
-NOTE: I'm sorry that me and my buddy haven't updated this repo in a while. We will start working on more upgrades, bugs, and even more!
 
 
 Credit:
@@ -19,4 +18,6 @@ DaxCodes/DaRedDeveloper: https://replit.com/@DaxCodes
 sqcodes: https://replit.com/@sqcodes
 
 # Extra Cookie Content 😉: https://replit.com/@DaxCodes/Hacked-Cookie-Clicker?v=1
+
+#### open that extra content in a new tab for other content that we were thinkin about buuut never made it in lol.
 
