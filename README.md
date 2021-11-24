@@ -11,7 +11,7 @@ That is all!
 --------------------------------------------------
 
 
-Credit:
+Credits:
 
 DaxCodes/DaRedDeveloper: https://replit.com/@DaxCodes
 
