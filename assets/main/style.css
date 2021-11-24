@@ -2,8 +2,7 @@ body{
   text-align: center;
   font-family: Comic Sans MS;
   font-weight: bold;
-  background-image: url("/assets/images/Background.png");
-  background-size: cover;
+  background-image: linear-gradient(to bottom, aqua, blue);
 }
 
 #upgradebtn{
