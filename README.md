@@ -18,5 +18,5 @@ DaxCodes/DaRedDeveloper: https://replit.com/@DaxCodes
 
 sqcodes: https://replit.com/@sqcodes
 
-
+# Extra Cookie Content 😉: https://replit.com/@DaxCodes/Hacked-Cookie-Clicker?v=1
 
