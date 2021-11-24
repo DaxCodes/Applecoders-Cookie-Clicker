@@ -2,7 +2,7 @@ body{
   text-align: center;
   font-family: Comic Sans MS;
   font-weight: bold;
-  background-image: url("/assets/images/tw.jpg");
+  background-image: url("tw.jpg");
   background-size: cover;
   color: orange;
 }
