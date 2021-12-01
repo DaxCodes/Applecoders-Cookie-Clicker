@@ -53,7 +53,6 @@ var robot2Interval;
 robot2CookieAmount = 1000;
 var robot2Cookies = robots2 * robot2CookieAmount;
 
-
 function addcookie()
 {
   cookiesNum += upgrade;

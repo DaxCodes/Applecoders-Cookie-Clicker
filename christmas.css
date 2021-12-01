@@ -2,7 +2,9 @@ body{
   text-align: center;
   font-family: Comic Sans MS;
   font-weight: bold;
-  background-image: linear-gradient(to bottom, aqua, blue);
+  background-image: url("christmas.png");
+  background-size: cover;
+  color: orange;
 }
 
 #upgradebtn{
@@ -28,6 +30,9 @@ body{
 #cookie{
   margin: 0px;
   padding: 0px;
+  background: rgb(173, 55, 0);
+  border: 5px solid black;
+  border-radius: 1000px;
 }
 
 @keyframes chroma{
@@ -59,8 +64,9 @@ body{
 #grandmalol:active{
   background-color: black;
 }
-
-
+#halloween{
+  background-color: red
+}
 #chef{
   font-size: 25px;
   font-family: Comic Sans MS;
@@ -82,7 +88,14 @@ body{
 #chef:active{
   background-color: black;
 }
-
+h1{
+  background-color: rgb(184, 52, 0);
+  border: 5px solid black;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
 
 #factory{
   font-size: 25px;
@@ -105,7 +118,6 @@ body{
 #factory:active{
   background-color: black;
 }
-
 #showUpgrades{
   font-size: 35px;
   font-family: Comic Sans MS;
@@ -135,10 +147,17 @@ body{
   50% {color: rgb(185, 0, 185);}
   100% {color: purple;}
 }
-#homebutton{
-color: red;
-}
 
+#homebutton{
+  padding: 5px;
+  background: rgb(175, 114, 0);
+  border: 2px solid orange;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+}
 #HighSpeedProcessor{
   font-size: 25px;
   font-family: Comic Sans MS;
@@ -160,8 +179,9 @@ color: red;
 #HighSpeedProcessor:active{
   background-color: black;
 }
+
 #CookieHacker{
-  font-size: 25px;
+    font-size: 25px;
   font-family: Comic Sans MS;
   font-weight: bold;
   text-align: center;
@@ -181,7 +201,6 @@ color: red;
 #CookieHacker:active{
   background-color: black;
 }
-
 #robot{
   font-size: 25px;
   font-family: Comic Sans MS;
@@ -223,41 +242,4 @@ color: red;
 
 #robot2:active{
   background-color: black;
-}
-
-#thanks{
-  background: green;
-  color: black;
-  border: 3px solid orange;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 3px;
-}
-
-#thanks:hover{
-  background: darkgreen;
-}
-#halloween{
-  background: black;
-  color: white;
-  border: 3px solid orange;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 3px;
-}
-
-#halloween:hover{
-  background: rgb(100, 65, 0);
-}
-#christmas{
-  background: rgb(255, 0, 0);
-  color: black;
-  border: 3px solid rgb(0, 255, 0);
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 3px;
-}
-
-#christmas:hover{
-  background: rgb(100, 0, 0);
 }
