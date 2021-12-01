@@ -52,7 +52,10 @@ var robots2 = 0;
 var robot2Interval;
 robot2CookieAmount = 1000;
 var robot2Cookies = robots2 * robot2CookieAmount;
-
+var localCookies = "value";
+localStorage.setItem("someVarKey", cookiesNum);
+var someVarName = localStorage.getItem("someVarKey");
+console.log(someVarName)
 function addcookie()
 {
   cookiesNum += upgrade;

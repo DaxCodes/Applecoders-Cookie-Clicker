@@ -33,6 +33,7 @@ body{
   background: rgb(173, 55, 0);
   border: 5px solid black;
   border-radius: 1000px;
+  cursor: pointer;
 }
 
 @keyframes chroma{
