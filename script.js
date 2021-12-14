@@ -1,5 +1,5 @@
 var cookies = document.getElementById("cookies");
-var cookiesNum = 0; /* Use this for Changing Cookie Value! */
+var cookiesNum = "0"; /* Use this for Changing Cookie Value! */
 cookies.innerHTML = cookiesNum + " Cookies";
 
 var cookieimg = document.getElementById("cookie");
@@ -53,9 +53,7 @@ var robot2Interval;
 robot2CookieAmount = 1000;
 var robot2Cookies = robots2 * robot2CookieAmount;
 var localCookies = "value";
-localStorage.setItem("someVarKey", cookiesNum);
-var someVarName = localStorage.getItem("someVarKey");
-console.log(someVarName)
+var bakery = document.getElementById("bakery")
 function addcookie()
 {
   cookiesNum += upgrade;
@@ -286,4 +284,10 @@ function robot2Num() {
   robot2Cookies = robots2 * robot2CookieAmount;
   cookiesNum += robot2Cookies;
   cookies.innerHTML = cookiesNum + " Cookies";
+}
+var gooddev = "dev"
+function verifyLogin() {
+  if (bakery.value == gooddev) {
+    location.href = "https://hacked-cookie-clicker.daxcodes.repl.co"
+  }
 }

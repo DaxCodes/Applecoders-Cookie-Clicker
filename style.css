@@ -1,9 +1,11 @@
 body{
   text-align: center;
-  font-family: Comic Sans MS;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   font-weight: bold;
   background-image: linear-gradient(to bottom, aqua, blue);
 }
+
+
 
 #upgradebtn{
   font-size: 25px;
@@ -29,8 +31,12 @@ body{
   margin: 0px;
   padding: 0px;
   cursor: pointer;
-}
 
+}
+#cookie:hover{
+  margin: 0px;
+  padding: 0px;
+}
 @keyframes chroma{
   0% {color: red;}
   20% {color: orange;}
@@ -181,6 +187,7 @@ color: red;
 
 #CookieHacker:active{
   background-color: black;
+  cursor: pointer;
 }
 
 #robot{
@@ -261,4 +268,18 @@ color: red;
 
 #christmas:hover{
   background: rgb(100, 0, 0);
+}
+#bakery{
+  border-radius: 20px;
+  animation-name: bakery;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+@keyframes bakery{
+  0% {background-color: red;}
+  20% {background-color: orange;}
+  40% {background-color: rgb(7, 61, 0);}
+  60% {background-color: green;}
+  80% {background-color: blue;}
+  100% {background-color: red;}
 }
