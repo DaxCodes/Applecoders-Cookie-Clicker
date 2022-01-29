@@ -142,6 +142,9 @@ border-radius: 192px;
   margin: 0px;
   opacity: 0;
 }
+#cookies{
+  font-family: Comic Sans MS;
+}
 
 #factory:hover{
   background-color: rgb(56, 56, 56);
