@@ -21,3 +21,11 @@ sqcodes: https://replit.com/@sqcodes
 
 #### open that extra content in a new tab for other content that we were thinkin about buuut never made it in lol.
 
+---------------
+
+## Cookie Code Streams
+
+We will possibly start streaming on YouTube on how we make Cookie Clicker!
+
+Channel Link: https://www.youtube.com/channel/UC0nPLeSIqTrynkW5JM0TlGA
+
