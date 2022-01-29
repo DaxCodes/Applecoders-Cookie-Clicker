@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width">
     <title>Christmas Cookie Clicker</title>
     <link href="christmas.css" rel="stylesheet" type="text/css" />
-  
-     <a href="index.html">
+    <a href="index.html">
       <button id="homebutton" onclick="homebutton()">Home</button>
     </a>
+    <br/>
+    <input type="text" id="bakery" placeholder="Snazzy Blueberry">
+  <button onclick="verifyLogin()" id="saveBakery">Save</button>
+     <br/>
+     <h3 id="codeText"></h3>
   </head>
   <body id="body">
     <h1 id="cookies">0 Cookies</h1>
@@ -33,6 +37,30 @@
     <button id="robot" onclick="robot()">Buy a Ultimate Cookie Robot (5,000 Cookies)</button>
     <br/>
     <button id="robot2" onclick="robot2()">Buy a Supreme Cookie Robot (10,000 Cookies)</button>
+    <button id="thanos" onclick="thanosgo()">Hire thanos's fingers (15,000 cookies)</button>
+
+    <div id="dev">
+    <article id="backgroundArticle">
+      <button class="buttonsRed" onclick="closedev()">Close</button>
+      <h2 id="newCode"> </h2>
+      <h1 id="header">CC Developer Tools</h1>
+      <button class="buttons" onclick="x10()">x10</button>
+      <button class="buttons" onclick="x100()">x100</button>
+      <button class="buttons" onclick="x1000()">x1000</button>
+      <button class="buttons" onclick="x10000()">x10000</button>
+      <button class="buttons" onclick="x100000()">x100000</button>
+      <br/>
+      <br/>
+      <button class="buttonsRed" onclick="wipedev()">Wipe</button>
+      <button class="buttonsRed" onclick="ruinfun()">Ruin the Fun</button>
+      <br/>
+      <br/>
+      <button class="buttons" onclick="goldcookiess()">Spawn Golden Cookie</button>
+      <button class="buttonsSpecial" onclick="newestCode()">See Newest Code</button>
+      <button class="buttons" onclick="buyeveryupgrade()">Buy Every Upgrade (x100)</button>
+    </article>
+
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

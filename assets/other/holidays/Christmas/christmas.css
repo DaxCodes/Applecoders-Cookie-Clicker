@@ -224,13 +224,13 @@ h1{
   background-color: black;
 }
 #robot2{
-  font-size: 25px;
+    font-size: 25px;
   font-family: Comic Sans MS;
   font-weight: bold;
   text-align: center;
   border-radius: 10px;
   border: 5px solid black;
-  color: rgb(111, 197, 255);
+  color: #1b4bbb;
   background: gray;
   margin: 0px;
   opacity: 0;
@@ -243,4 +243,169 @@ h1{
 
 #robot2:active{
   background-color: black;
+}
+#thanos{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(53, 0, 0);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#thanos:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#thanos:active{
+  background-color:black;
+}
+
+#squids{
+  color: blue;
+}
+#squids:visited{
+  color:blue;
+}
+#squids:hover{
+  color: blue;
+}
+
+#header{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    color: white;
+}
+
+#backgroundArticle{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background: rgb(53, 53, 53);
+    border: 3px solid rgb(0, 0, 0);
+    width: 20%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons{
+    text-align: center;
+    background: rgb(107, 107, 107);
+    border: solid 5px gray;
+    font-family: 'Comic Sans MS';
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+}
+.buttons:hover{
+    background: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.buttonsRed{
+    text-align: center;
+    background: rgb(150, 0, 0);
+    border: solid 5px rgb(44, 0, 0);
+    font-family: 'Comic Sans MS';
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+}
+.buttonsRed:hover{
+    background: rgb(87, 0, 0);
+    cursor: pointer;
+}
+#dev{
+  opacity: 0;
+}
+
+#devopen{
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+  color: aqua;
+  pointer-events: none;
+}
+#devopen:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+  pointer-events: none;
+}
+
+#GoldCookie{
+  position: absolute;
+  top: 150px;
+  left: 530px;
+  opacity: 0;
+}
+
+.buttonsSpecial{
+    text-align: center;
+    background: rgb(255, 230, 0);
+    border: solid 5px rgb(132, 134, 0);
+    font-family: 'Comic Sans MS';
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+}
+.buttonsSpecial:hover{
+    background: rgb(94, 84, 0);
+    cursor: pointer;
+}
+
+#saveBakery{
+  text-align: center;
+  background: rgb(0, 255, 0);
+  border: solid 5px green;
+  font-family: 'Comic Sans MS';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+#saveBakery:hover{
+  background: rgb(0, 71, 24);
+  cursor: pointer;
+}
+
+#bakery{
+  border-radius: 20px;
+  animation-name: bakery;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+@keyframes bakery{
+  0% {background-color: red;}
+  20% {background-color: orange;}
+  40% {background-color: rgb(7, 61, 0);}
+  60% {background-color: green;}
+  80% {background-color: blue;}
+  100% {background-color: red;}
+}
+#codeText{
+  color: white;
+  background: black;
+  text-align: center;
+  border-radius: 10px;
 }

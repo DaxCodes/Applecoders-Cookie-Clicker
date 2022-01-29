@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #header{
+            text-align: center;
+            font-family: 'Comic Sans MS';
+            font-weight: bold;
+            color: white;
+        }
+
+        #backgroundArticle{
+            text-align: center;
+            background: rgb(53, 53, 53);
+            border: 3px solid rgb(0, 0, 0);
+            width: 40%;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .buttons{
+            text-align: center;
+            background: rgb(107, 107, 107);
+            border: solid 5px gray;
+            font-family: 'Comic Sans MS';
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 6px;
+        }
+        .buttons:hover{
+            background: rgb(70, 70, 70);
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <article id="backgroundArticle">
+            <h2 id="header">X</h2>
+            <h1 id="header">CC Developer Tools</h1>
+            <button class="buttons" onclick="x100()">x100</button>
+        </article>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

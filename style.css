@@ -1,12 +1,53 @@
-body{
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  font-weight: bold;
-  background-image: linear-gradient(to bottom, aqua, blue);
+@keyframes realchroma{
+  0%{background: red;}
+  20%{background: rgb(255, 145, 0);}
+  40%{background: rgb(251, 255, 0);}
+  60%{background: rgb(21, 255, 0);}
+  75%{background: rgb(0, 4, 255);}
+  90%{background: rgb(75, 0, 161);}
+  100%{background: red;}
+}
+@keyframes realdarkchroma{
+  0%{background: rgb(138, 0, 0);}
+  20%{background: rgb(117, 66, 0);}
+  40%{background: rgb(129, 131, 0);}
+  60%{background: rgb(11, 136, 0);}
+  75%{background: rgb(0, 2, 122);}
+  90%{background: rgb(40, 0, 85);}
+  100%{background: rgb(109, 0, 0);}
+}
+@keyframes legendchroma{
+  0%{background: rgb(197, 194, 0);}
+  50%{background: rgb(255, 251, 0);}
+  100%{background: rgb(197, 194, 0);}
+}
+@keyframes darklegendchroma{
+  0%{background: rgb(128, 125, 0);}
+  50%{background: rgb(197, 194, 0);}
+  100%{background: rgb(128, 125, 0);}
 }
 
+body{
+  text-align: center;
+  font-family: creepy;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, rgb(0, 238, 255), rgb(0, 17, 255));
+}
 
-
+@font-face{
+  font-family: creepy;
+  src: url(o.ttf)
+}
+#openhomepage{
+  background-color: grey;
+  border-radius: 20px;
+  width: 150px;
+  top: 65%;
+  left: 88%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
 #upgradebtn{
   font-size: 25px;
   font-family: Comic Sans MS;
@@ -14,9 +55,7 @@ body{
   text-align: center;
   border-radius: 10px;
   border: 5px solid black;
-  animation-name: chroma;
-  animation-duration: 5s;
-  animation-iteration-count: 100;
+  color: white;
   background: gray;
   margin: 0px;
   opacity: 0;
@@ -31,7 +70,7 @@ body{
   margin: 0px;
   padding: 0px;
   cursor: pointer;
-
+border-radius: 192px;
 }
 #cookie:hover{
   margin: 0px;
@@ -232,7 +271,26 @@ color: red;
 #robot2:active{
   background-color: black;
 }
-
+#thanos{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(53, 0, 0);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#thanos:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#thanos:active{
+  background-color:black;
+}
 #thanks{
   background: green;
   color: black;
@@ -269,17 +327,322 @@ color: red;
 #christmas:hover{
   background: rgb(100, 0, 0);
 }
-#bakery{
+#bakery1{
   border-radius: 20px;
   animation-name: bakery;
   animation-duration: 12s;
   animation-iteration-count: infinite;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  border: 5px solid black;
 }
 @keyframes bakery{
-  0% {background-color: red;}
-  20% {background-color: orange;}
-  40% {background-color: rgb(7, 61, 0);}
-  60% {background-color: green;}
-  80% {background-color: blue;}
-  100% {background-color: red;}
+  0% {background-color: rgb(0, 255, 0);}
+  50%{background-color: rgb(0, 153, 0);}
+  100%{background-color: rgb(0, 255, 0);}
+}
+#bakery{
+  border-radius: 20px;
+  background: orange;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  border: 5px solid black;
+}
+#squids{
+  color: blue;
+}
+#squids:visited{
+  color:blue;
+}
+#squids:hover{
+  color: blue;
+}
+
+#header{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    color: white;
+}
+
+#backgroundArticle{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background: rgb(53, 53, 53);
+    border: 3px solid rgb(0, 0, 0);
+    width: 20%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons{
+    text-align: center;
+    background: rgb(107, 107, 107);
+    border: solid 5px gray;
+    font-family: 'Comic Sans MS';
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+}
+.buttons:hover{
+    background: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.buttonsRed{
+    text-align: center;
+    background: rgb(150, 0, 0);
+    border: solid 5px rgb(44, 0, 0);
+    font-family: 'Comic Sans MS';
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+}
+.buttonsRed:hover{
+    background: rgb(87, 0, 0);
+    cursor: pointer;
+}
+#dev{
+  opacity: 0;
+  pointer-events: none;
+}
+
+#devopen{
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+  color: aqua;
+  pointer-events: none;
+}
+#devopen:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+  pointer-events: none;
+}
+
+#GoldCookie{
+  position: absolute;
+  top: 150px;
+  left: 530px;
+  opacity: 0;
+}
+
+.buttonsSpecial{
+    text-align: center;
+    background: rgb(255, 230, 0);
+    border: solid 5px rgb(132, 134, 0);
+    font-family: 'Comic Sans MS';
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+}
+.buttonsSpecial:hover{
+    background: rgb(94, 84, 0);
+    cursor: pointer;
+}
+
+#saveBakery{
+  text-align: center;
+  background: rgb(0, 255, 0);
+  border: solid 5px green;
+  font-family: 'Comic Sans MS';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px;
+}
+#saveBakery22{
+  text-align: center;
+  background: rgb(255, 166, 0);
+  border: solid 5px rgb(128, 83, 0);
+  font-family: 'Comic Sans MS';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px;
+}
+#saveBakery:hover{
+  background: rgb(12, 75, 0);
+  cursor: pointer;
+}
+#saveBakery22:hover{
+  background: rgb(75, 57, 0);
+  cursor: pointer;
+}
+
+#cookiegiver{
+  text-align: center;
+  background: rgb(107, 107, 107);
+  border: solid 5px gray;
+  font-family: 'Comic Sans MS';
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(46, 46, 46);
+  opacity: 1; /* Firefox */
+}
+
+#giverText{
+  color: white;
+}
+#mystery{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  animation-name: realchroma;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: black;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+#mystery:active{
+  background: rgb(0, 0, 0);
+}
+#mystery:hover{
+  
+  animation-name: realdarkchroma;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+#homepagex{
+  color: red;
+  pointer-events: all;
+  cursor: pointer;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+#homepagex:hover{
+  color: darkred;
+}
+
+
+#legendbtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  animation-name: legendchroma;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  color: black;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+#legendbtn:hover{
+  animation-name: darklegendchroma;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#versionControl{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#bitbtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: red;
+  color: black;
+  margin: 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+#bitbtn:hover{
+  background: darkred;
+}
+#malwarebtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: url(/assets/images/blue.gif);
+  color: black;
+  margin: 0px;
+  opacity: 0;
+  background-size: cover;
+  pointer-events: none;
+}
+#laserbtn:hover{
+  background: rgb(22, 22, 22);
+}
+#laserbtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: url(/assets/images/coolcolors.gif);
+  color: white;
+  margin: 0px;
+  opacity: 0;
+  background-size: cover;
+  pointer-events: none;
+}
+#malwarebtn:hover{
+  background: rgb(9, 0, 139);
+}
+#savebtn{
+  text-align: center;
+  background: blue;
+  border: solid 5px darkblue;
+  font-family: 'Comic Sans MS';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+#savebtn:hover{
+  background: rgb(0, 0, 95);
+  cursor: pointer;
+}
+
+#codes{
+  text-align: center;
+}
+
+#realmbtn{
+  opacity: 0;
+  pointer-events: none;
 }
