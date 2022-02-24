@@ -1,3 +1,4 @@
+notifyMe("Welcome to Cookie Clicker")
 var cookies = document.getElementById("cookies");
 var codeText = document.getElementById("codeText");
 var cookiesNum = 0; /* Use this for Changing Cookie Value! */
@@ -114,6 +115,7 @@ var malwarebtn = document.getElementById("malwarebtn");
 // Code Values \\
 var eggdexValue = false
 var fireValue = false
+var dinoValue = false
 
 // More DevTools & Other
 var goldencookie = document.getElementById("GoldCookie")
@@ -128,9 +130,6 @@ var leaders = document.getElementById("leaders")
 function addcookie() {
   cookiesNum += upgrade;
   cookies.innerHTML = cookiesNum + " Cookies";
-  if (cookiesNum > lead) {
-    localStorage.getItem("lead") = cookiesNum
-  }
 }
 
 function upgradefunc() {
@@ -397,6 +396,9 @@ function messageText(message) {
   codeText.innerHTML = message;
   setTimeout(() => { codeText.innerHTML = "" }, 2500);
 }
+
+// CC Codes Below! \\
+
 function verifyLogin() {
   if (bakery.value == "corn mod") {
     codeText.innerHTML = "Code Accepted: will expire soon i swear :/";
@@ -601,6 +603,16 @@ function verifyLogin() {
       cookiesNum += 85000;
       cookies.innerHTML = cookiesNum + " Cookies";
     }
+  }
+  if(bakery.value == "dino") {
+      if(dinoValue == true) {
+        messageText("Code Already Redeemed!")
+      } else {
+        dinoValue = true;
+        messageText("Code Accepted: bean said it.");
+        cookiesNum += 50000;
+        cookies.innerHTML = cookiesNum + " Cookies";
+      }
   }
 }
 function thanosgo() {
@@ -929,4 +941,26 @@ function realmNum() {
   realmCookies = realm * realmCookieAmount;
   cookiesNum += realmCookies;
   cookies.innerHTML = cookiesNum + " Cookies";
+}
+function notifyMe(msg) {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert(msg);
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification(msg);
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification(msg);
+      }
+    });
+  }
 }

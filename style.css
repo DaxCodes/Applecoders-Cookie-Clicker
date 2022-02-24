@@ -649,3 +649,17 @@ color: red;
   opacity: 0;
   pointer-events: none;
 }
+#questbtn{
+  text-align: center;
+  background: green;
+  border: solid 5px darkgreen;
+  font-family: 'Comic Sans MS';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 6px;
+}
+#questbtn:hover{
+  background: rgb(9, 299, 1);
+  cursor: pointer;
+}
