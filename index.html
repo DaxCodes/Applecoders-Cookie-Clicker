@@ -6,19 +6,24 @@
     <title>Cookie Clicker</title>
     <link rel="shortcut icon" href="assets/images/cookie.png" type="image/png">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
 
 
     <!-- Holidays -->
   
-    <a href="halloween.html" id="halloween">Halloween Event</a> 
+
+    <script src="https://replit.com/public/js/repl-auth-v2.js"></script><br><br>
+    <button onclick="LoginWithReplit()" id="upgradebtn"> Login or sign up for more features (coming soon) </button>
     <!-- Thanksgiving:
     <a href="assets/other/thanksgiving/thanksgiving.html" id="thanks">Thanksgiving Event</a> -->
     <!-- Christmas:
     <a href="christmas.html" id="christmas">Christmas Event</a>
     <br/> -->
     <p id="versionControl">Cookie Version: 2.4.6</p>
+   
+  <br/>
     <h1> </h1>
-    <a href="https://www.google.com"><button id="savebtn">click if teacher is coming</button></a>
+    
     <!-- Quests were removed due to bug! -->
     <a href="https://cookieboard.applecoders.repl.co/" target="_blank"><button id="savebtn">See the top scores!</button></a>
     <br/>
@@ -35,6 +40,55 @@
 <div class="content">
   
   <br><br></br></br>
+ <p>  </p><a href="https://cookie-clicker-pro.applecoders.repl.co/">
+  <button class="button-64" role="button"><span class="text">Go Back To Old Cookie Clicker</span></button></a>
+  <br>
+   
+    <br/>
+    <!--<button id="grandmalol" onclick="grandma()">Hire a Grandma (costs 100 Cookies)</button>-->
+    <br/>
+    <button id="chef" onclick="chef()">Hire a Chef (costs 200 Cookies)</button>
+    <br/>
+    <button id="factory" onclick="factory()">Create a Factory (costs 1,000 cookies)</button>
+    <br/>
+    <button id="HighSpeedProcessor" onclick="processor()">Buy a High-Speed Processor (costs 1,500 Cookies)</button>
+    <br/>
+    <button id="CookieHacker" onclick="hacker()">Hire a Cookie Hacker (costs 2,000 Cookies)</button>
+    <br/>
+    <button id="robot" onclick="robot()">Buy a Ultimate Cookie Robot (costs 5,000 Cookies)</button>
+    <br/>
+    <button id="robot2" onclick="robot2()">Buy a Supreme Cookie Robot (costs 10,000 Cookies)</button>
+    <br/>
+    <button id="thanos" onclick="thanosgo()">Hire thanos's fingers (costs 15,000 cookies)</button>
+    <br/>
+    
+    <button onclick="mysterymode()" id="mystery">Buy a OMEGA COOKIE ROBOT (costs 100,000 Cookies)</button>
+    <br/>
+    <button onclick="legendminer()" id="legendbtn">Hire Legendary Cookie Miners (costs 1,000,000 Cookies)</button>
+    <br/>
+    <button onclick="bitminer()" id="bitbtn">Buy BitCookie Software (costs 10,000,000 Cookies)</button>
+    <br/>
+    <button onclick="malware()" id="malwarebtn">Buy Cookie Malware (costs 100,000,000)</button>
+    <br/>
+    <button onclick="lasercutter()" id="laserbtn">Buy Cookie Laser Cookie Cutter (costs 1,000,000,000 Cookies)</button>
+    <br>
+    <button onclick="legendcutter()" id="legendcookiecutterbtn">Buy LEGENDARY Cookie Cutter (costs 50,000,000,000 Cookies)</button>
+    <br/>
+    <button onclick="godtlaser()" id="godtlaserbtn">Buy GOD TIER COOKIE LASER CUTTER (costs 150,000,000,000 Cookies)</button> <button onclick="darkmode()" id="dark">🌙</button><br>
+    <button onclick="fullscreenMode();" id="yellowtheme">Fullscreen Mode</button><br><br><br><br><br><br><br><br>
+ <div id="chat">
+    <h3></h3></div>
+</div>
+
+</div>
+   
+<button type="button" class="collapsiblee" disabled>Pets (coming soon)</button>
+ 
+
+
+<div class="content">
+  
+  
  <p>  </p><a href="https://cookie-clicker-pro.applecoders.repl.co/">
   <button class="button-64" role="button"><span class="text">Go Back To Old Cookie Clicker</span></button></a>
     <button id="upgradebtn" onclick="upgradefunc()">Upgrade Clicks (costs 50 Cookies)</button>
@@ -69,24 +123,29 @@
     <button onclick="legendcutter()" id="legendcookiecutterbtn">Buy LEGENDARY Cookie Cutter (costs 50,000,000,000 Cookies)</button>
     <br/>
     <button onclick="godtlaser()" id="godtlaserbtn">Buy GOD TIER COOKIE LASER CUTTER (costs 150,000,000,000 Cookies)</button>
+   <button onclick="darkmode()" id="dark">🌙</button><br>
+    <button onclick="fullscreenMode();" id="yellowtheme">Fullscreen Mode</button>
  <div id="chat">
-    <h3></h3><!-- Start BawkBox Code--><script data-sil-id="633df482cac98e0013e6ecb4">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/chatroom/633df482cac98e0013e6ecb4?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-chatroom sil-widget" id="sil-widget-633df482cac98e0013e6ecb4"><a href="//bawkbox.com/install/chatroom">Public Chatroom</a></div><!-- End BawkBox Code--></div>
+    <h3></h3></div>
 </div>
 
 </div>
+    
     <input type="text" id="bakery1" placeholder="Bakery Name Here">
-    <button id="saveBakery">Save</button>
+    <button id="saveBakery" onclick='saveName()'>Save</button>
+    <br>
+    <h2 id='bakeryName' style='font-family: Comic Sans MS;'>User's Bakery!</h2>
     <br/>
     <h3 id="codeText"></h3>
     <div id="upgrades">
       
     </div>
-    <button id="devopen" onclick="opendev()">Open Dev Tools</button>
+    
   </head>
   <body id="body">
-    <h1 id="cookies">0 Cookies</h1>
+    <h1 id="cookies1">This  Website had to be shut down for good.</h1>
     <img src="assets/images/cookie.png" height="250px" width="250px" id="cookie" onclick="addcookie()"/>
-    <br/>
+    
     
    
     <br/>
@@ -95,6 +154,10 @@
    
     <br/>
     <p id="versionControl">Cookie Clicker made by AppleCoders</p>
+    <br>
+    <button id='resetbtn' onclick='resetstats()'>Reset</button>
+    <br>
+    <button id="devopen" onclick="opendev()">Open Dev Tools</button>
    
     <img id="GoldCookie" onclick="goldclick()" src="assets/images/GoldCookie.png"/>
     <div id="dev">
@@ -117,6 +180,7 @@
       <!--100 lines!!!!-->
       <button class="buttonsSpecial" onclick="newestCode()">See Newest Code</button>
       <button class="buttons" onclick="buyeveryupgrade()">Buy Every Upgrade (x100)</button>
+      
       <br/>
       <br/>
       <h2 id="giverText">Cookie Giver</h2>
@@ -127,7 +191,33 @@
     </div>
   
     <br/><br/>
-    
+    <a href="https://applecoders.repl.co">
+<button id="apple">AppleCoders 🍎</button>
+<style>#apple {
+   border-radius: 5px;
+  height:25px;
+  opacity: 0.7;
+    background-color: red;
+  border: none;
+  margin: 10px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(999, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+   transition: all 200ms linear;
+   position: fixed;
+    cursor: pointer;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+  }
+
+  #apple:hover{
+    opacity:1;
+   
+   
+  }
+</style>
+</a>
     <script src="script.js"></script>
   </body>
 </html>

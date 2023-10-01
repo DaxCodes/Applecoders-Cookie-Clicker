@@ -1,9 +1,23 @@
+// SHUT DOWN FOR GOOD SRRY! \\
+// it doesnt work anymore, and its way too hard to fix with 1k+ lines \\
+
+window.location.replace("https://cookieclicker.applecoders.repl.co/assets/other/broken.html");
+
+
+//---- LocalStorage ----\\
+if(localStorage.getItem('cookies') == undefined) {
+  localStorage.setItem('cookies', 0);
+}
+if(localStorage.getItem('name') == undefined) {
+  localStorage.setItem('name', 'User');
+}
+document.getElementById('bakeryName').innerHTML = localStorage.getItem('name') + "'s Bakery!"
 
     
 notifyMe("Welcome to Cookie Clicker")
 var cookies = document.getElementById("cookies");
 var codeText = document.getElementById("codeText");
-var cookiesNum = 0; /* Use this for Changing Cookie Value! */
+var cookiesNum = localStorage.getItem('cookies'); /* Use this for Changing Cookie Value! */
 cookies.innerHTML = cookiesNum + " Cookies";
 localStorage.setItem("lead", 12333)
 var lead = localStorage.getItem("lead")
@@ -147,10 +161,15 @@ var homeopen = document.getElementById("openhomepage")
 // DevTools Variables \\
 var cookiegiver = document.getElementById("cookiegiver");
 
+//if(window.location.href == 'https://cookie-clicker.applecoders.repl.co/'{window.location.replace("https://cookieclicker.applecoders.repl.co/assets/other/down.html");}
+
+  
+
 // Functions \\
 var leaders = document.getElementById("leaders")
 function addcookie() {
-  cookiesNum += upgrade;
+  localStorage.setItem('cookies', parseInt(localStorage.getItem('cookies')) + upgrade);
+  cookiesNum = localStorage.getItem('cookies');
   cookies.innerHTML = cookiesNum + " Cookies";
 }
 
@@ -159,7 +178,9 @@ function upgradefunc() {
     upgrade += 1;
     cookiesNum -= cookieamount;
     cookies.innerHTML = cookiesNum + " Cookies";
+    codeText.innerHTML = "Success";
   }
+   
   /* dont kill the grandmas in the js factory*/
   if (cookiesNum >= cookieamount) {
     upgrade += 1;
@@ -175,6 +196,7 @@ function grandma() {
     grandmas += 1;
     cookies.innerHTML = cookiesNum + " Cookies";
     grandmaIntFunc()
+     codeText.innerHTML = "Success";
   }
   if (cookiesNum >= grandmaAmount) {
     cookiesNum -= grandmaAmount;
@@ -1026,3 +1048,46 @@ upgradebtn.style.opacity = 1;
     laserbtn.style.pointerEvents = "all";
     LegendCutterbtn.style.pointerEvents = "all";
     GodTLaserbtn.style.pointerEvents = "all";
+var dark = false;
+function darkmode(){
+  var body = document.getElementById("bodything")
+  if(dark == false) {
+    document.body.style.background = "linear-gradient(to bottom, grey, black)"
+    document.getElementById("dark").innerHTML = "🌞";
+    dark = true;
+  } else {
+    document.body.style.background = "linear-gradient(to bottom, rgb(0, 238, 255), rgb(0, 17, 255))"
+    document.getElementById("dark").innerHTML = "🌙";
+    dark = false;
+  }
+  
+}
+var fullscreenA = false;
+function fullscreenMode(){
+  if(fullscreenA == false) {
+    document.documentElement.requestFullscreen();
+    fullscreenA = true;
+    document.getElementById("fullscreen").innerHTML = "Exit Fullscreen";
+  } else {
+    document.exitFullscreen();
+    document.getElementById("fullscreen").innerHTML = "Fullscreen";
+    fullscreenA = false;
+  }
+}
+function resetstats() {
+  var a = prompt('Are you sure you want to reset? (yes/no)');
+  if(a == 'yes') {
+    localStorage.setItem('cookies', 0);
+    cookiesNum = localStorage.getItem('cookies');
+    localStorage.setItem('name', 'User');
+    cookies.innerHTML = cookiesNum + ' Cookies';
+    alert('Successfully Wiped!');
+    location.reload();
+  } else {
+    alert('Reset Cancelled!');
+  }
+}
+function saveName() {
+  localStorage.setItem('name', document.getElementById('bakery1').value);
+  alert('Bakery Name Saved!');
+}

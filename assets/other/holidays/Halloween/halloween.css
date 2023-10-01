@@ -1,0 +1,234 @@
+body{
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74MuAx-0dj_dAYwieElgsRb-j6Wx3Nzxzuw&usqp=CAU);
+  color: red;
+  background-size: cover;
+}
+
+#upgradebtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  animation-name: chroma;
+  animation-duration: 5s;
+  animation-iteration-count: 100;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#upgradebtn:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#cookie{
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes chroma{
+  0% {color: red;}
+  20% {color: orange;}
+  40% {color: rgb(7, 61, 0);}
+  60% {color: green;}
+  80% {color: blue;}
+  100% {color: red;}
+}
+#grandmalol{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: orange;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+
+#grandmalol:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#grandmalol:active{
+  background-color: black;
+}
+#halloween{
+  background-color: red
+}
+#chef{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(0, 255, 55);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+
+#chef:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#chef:active{
+  background-color: black;
+}
+
+#factory{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: blue;
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+
+#factory:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#factory:active{
+  background-color: black;
+}
+#showUpgrades{
+  font-size: 35px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  animation-name: purplegradient;
+  animation-duration: 3s;
+  animation-iteration-count: 1000;
+  background: gray;
+  margin: 0px;
+}
+
+#showUpgrades:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#showUpgrades:active{
+  background-color: black;
+}
+
+@keyframes purplegradient{
+  0% {color: purple;}
+  50% {color: rgb(185, 0, 185);}
+  100% {color: purple;}
+}
+
+#homebutton{
+  padding: 5px;
+  background: rgb(175, 114, 0);
+  border: 2px solid orange;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+}
+#HighSpeedProcessor{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(59, 0, 73);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+
+#HighSpeedProcessor:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+#HighSpeedProcessor:active{
+  background-color: black;
+}
+
+#CookieHacker{
+    font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(255, 0, 0);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#CookieHacker:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#CookieHacker:active{
+  background-color: black;
+}
+#robot{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(255, 111, 219);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#robot:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#robot:active{
+  background-color: black;
+}
+#robot2{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: rgb(111, 197, 255);
+  background: gray;
+  margin: 0px;
+  opacity: 0;
+}
+#robot2:hover{
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+#robot2:active{
+  background-color: black;
+}

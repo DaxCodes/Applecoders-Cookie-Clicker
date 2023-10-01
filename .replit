@@ -35,4 +35,4 @@ provideFormatter = true
 
 [auth]
 pageEnabled = false
-buttonEnabled = false
+buttonEnabled = true

@@ -60,7 +60,7 @@ body{
   color: white;
   background: gray;
   margin: 0px;
-  opacity: 0;
+
 }
 #upgradebtn:hover{
   background-color: rgb(56, 56, 56);
@@ -704,6 +704,40 @@ color:white;
   overflow-y:auto;
    border-radius: 10px;
 }
+.collapsiblee {
+  background: black;
+  color: white;
+  cursor: not-allowed;
+  padding: 18px;
+  width: 10%;
+  border: none;
+  text-align: middle;
+  outline: none;
+  font-size: 15px;
+  position: fixed;
+  left: 0%;
+  z-index: 2;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.active, .collapsiblee:hover {
+background:;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: black;
+  width:31%;
+  height: 500px;
+  position: fixed;
+  right: 0%;
+color:white;
+  overflow-y:auto;
+   border-radius: 10px;
+}
 #easy{
   font-size: 45px;
   font-family: sans-serif;
@@ -770,4 +804,32 @@ button:{
 }
 #chat{
   opacity:1;
+}
+#dark{ text-align: center; background: rgb(0, 183, 255); border: solid 5px rgb(0, 88, 139); font-family: 'Comic Sans MS'; color: rgb(0, 0, 0); font-weight: bold; border-radius: 10px; padding: 6px; } #dark:hover{ cursor: pointer; background: rgb(0, 89, 190); }
+#yellowtheme{
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  background: rgb(255, 247, 0);
+   border-style: solid;
+  border-color: red;
+   border-width: 5px;
+}
+#resetbtn{
+  background: red;
+  border: 0;
+  border-radius: 3px;
+  padding: 2px;
+  font-family: Comic Sans MS;
+  width: 100px;
+  transition: .2s background, .2s padding;
+}
+#resetbtn:hover{
+  background:#d20404;
+  padding: 3px;
+  cursor: pointer;
+}
+#resetbtn:active{
+  background: #ae0404;
+  padding: 4px;
 }
