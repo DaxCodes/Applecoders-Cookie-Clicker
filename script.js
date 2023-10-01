@@ -1,3 +1,5 @@
+
+    
 notifyMe("Welcome to Cookie Clicker")
 var cookies = document.getElementById("cookies");
 var codeText = document.getElementById("codeText");
@@ -94,7 +96,7 @@ var laserAmount = 1000000000;
 var lasers = 0;
 var laserInterval;
 var laserCookieAmount = 500000000;
-var laserCookies = bits * bitCookieAmount;
+var laserCookies = lasers * laserCookieAmount;
 var laserbtn = document.getElementById("laserbtn");
 // New Realm 🌍 Button (Bug Fixed by SQcodes!) \\
 var realmAmount = 10000000000;
@@ -111,6 +113,26 @@ var malwareInterval;
 var malwareCookieAmount = 50000000;
 var malwareCookies = malwares * malwareCookieAmount;
 var malwarebtn = document.getElementById("malwarebtn");
+
+// Legend Cutter Button (Bug Fixed by DaxCodes!) \\
+var LegendCutterAmount = 50000000000;
+var LegendCutters = 0;
+var LegendCutterInterval;
+var LegendCutterCookieAmount = 50000000000;
+var LegendCutterCookies = LegendCutters * LegendCutterCookieAmount;
+var LegendCutterbtn = document.getElementById("legendcookiecutterbtn");
+
+// GOD TIER LASER CUTTER BUTTON (Bug Fixed by DaxCodes!) \\
+var GodTLaserAmount = 150000000000;
+var GodTLasers = 0;
+var GodTLaserInterval;
+var GodTLaserCookieAmount = 125000000000;
+var GodTLaserCookies = GodTLasers * GodTLaserCookieAmount;
+var GodTLaserbtn = document.getElementById("godtlaserbtn");
+
+//////////////////////////////
+    // End of Buttons \\
+//////////////////////////////
 
 // Code Values \\
 var eggdexValue = false
@@ -221,72 +243,7 @@ function factoryNum() {
   cookies.innerHTML = cookiesNum + " Cookies";
 }
 
-function showAllUpgrades() {
-  if (opacityScale == 0) {
-    opacityScale = 1;
-    upgradebtn.style.opacity = 1;
-    grandmabtn.style.opacity = 1;
-    chefbtn.style.opacity = 1;
-    factorybtn.style.opacity = 1;
-    highspeedbtn.style.opacity = 1;
-    hackerbtn.style.opacity = 1;
-    robotbtn.style.opacity = 1;
-    robot2btn.style.opacity = 1;
-    thanosbtn.style.opacity = 1;
-    mysterybtn.style.opacity = 1;
-    legendbtn.style.opacity = 1;
-    bitbtn.style.opacity = 1;
-    malwarebtn.style.opacity = 1;
-    laserbtn.style.opacity = 1;
-    upgradebtn.style.pointerEvents = "all";
-    grandmabtn.style.pointerEvents = "all";
-    chefbtn.style.pointerEvents = "all";
-    factorybtn.style.pointerEvents = "all";
-    highspeedbtn.style.pointerEvents = "all";
-    hackerbtn.style.pointerEvents = "all";
-    robotbtn.style.pointerEvents = "all";
-    robot2btn.style.pointerEvents = "all";
-    thanosbtn.style.pointerEvents = "all";
-    mysterybtn.style.pointerEvents = "all";
-    legendbtn.style.pointerEvents = "all";
-    bitbtn.style.pointerEvents = "all";
-    malwarebtn.style.pointerEvents = "all";
-    laserbtn.style.pointerEvents = "all";
-    showUpgrades.innerHTML = "Close All Upgrades..";
 
-  } else {
-    opacityScale = 0;
-    upgradebtn.style.opacity = 0;
-    grandmabtn.style.opacity = 0;
-    chefbtn.style.opacity = 0;
-    factorybtn.style.opacity = 0;
-    highspeedbtn.style.opacity = 0;
-    hackerbtn.style.opacity = 0;
-    robotbtn.style.opacity = 0;
-    robot2btn.style.opacity = 0;
-    thanosbtn.style.opacity = 0;
-    mysterybtn.style.opacity = 0;
-    legendbtn.style.opacity = 0;
-    bitbtn.style.opacity = 0;
-    malwarebtn.style.opacity = 0;
-    laserbtn.style.opacity = 0;
-    upgradebtn.style.pointerEvents = "none";
-    grandmabtn.style.pointerEvents = "none";
-    chefbtn.style.pointerEvents = "none";
-    factorybtn.style.pointerEvents = "none";
-    highspeedbtn.style.pointerEvents = "none";
-    hackerbtn.style.pointerEvents = "none";
-    robotbtn.style.pointerEvents = "none";
-    robot2btn.style.pointerEvents = "none";
-    thanosbtn.style.pointerEvents = "none";
-    mysterybtn.style.pointerEvents = "none";
-    legendbtn.style.pointerEvents = "none";
-    bitbtn.style.pointerEvents = "none";
-    malwarebtn.style.pointerEvents = "none";
-    laserbtn.style.pointerEvents = "none";
-    showUpgrades.innerHTML = "Open All Upgrades...";
-  }
-}
 
 function processor() {
   if (cookiesNum == processorAmount) {
@@ -575,7 +532,7 @@ function verifyLogin() {
       cookies.innerHTML = cookiesNum + " Cookies";
     }
   }
-  if (bakery.value == "suskeyi") {
+  if (bakery.value == "suskey1") {
     codeText.innerHTML = "Code Accepted: Hi supreme member.";
     thanos += 10000000000000000000000000000000000000000000000
     thanosIntervalFunc()
@@ -720,6 +677,7 @@ function opendev() {
 }
 
 function goldcookiess() {
+  goldencookie.style.pointerEvents = 'all';
   goldencookie.style.opacity = 1;
 }
 
@@ -727,6 +685,8 @@ function goldclick() {
   cookiesNum += 1000;
   cookies.innerHTML = cookiesNum + " Cookies";
   goldencookie.style.opacity = 0;
+  goldencookie.style.pointerEvents = 'none';
+  // Golden Cookie Fixed on May 10, 2021 
 }
 
 function newestCode() {
@@ -964,3 +924,105 @@ function notifyMe(msg) {
     });
   }
 }
+
+function legendcutter() {
+  // 1000 LINES OF JS  :OOOOOOOo \\
+  if (cookiesNum == LegendCutterAmount) {
+    cookiesNum -= LegendCutterAmount;
+    LegendCutters += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    legendcutterIntervalFunc()
+  }
+  if (cookiesNum >= LegendCutterAmount) {
+    cookiesNum -= LegendCutterAmount;
+    LegendCutters += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    legendcutterIntervalFunc()
+  }
+}
+
+function legendcutterIntervalFunc() {
+  LegendCutterInterval = setInterval(legendcutterNum, 1000)
+}
+
+function legendcutterNum() {
+  LegendCutterCookies = LegendCutters * LegendCutterCookieAmount;
+  cookiesNum += LegendCutterCookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+// God Tier Laser Function \\
+function godtlaser() {
+  if (cookiesNum == GodTLaserAmount) {
+    cookiesNum -= GodTLaserAmount;
+    GodTLasers += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    godtlaserIntervalFunc()
+  }
+  if (cookiesNum >= GodTLaserAmount) {
+    cookiesNum -= GodTLaserAmount;
+    GodTLasers += 1;
+    cookies.innerHTML = cookiesNum + " Cookies";
+    godtlaserIntervalFunc()
+  }
+}
+
+function godtlaserIntervalFunc() {
+  GodTLaserInterval = setInterval(godtlaserNum, 1000)
+}
+
+function godtlaserNum() {
+  GodTLaserCookies = GodTLasers * GodTLaserCookieAmount;
+  cookiesNum += GodTLaserCookies;
+  cookies.innerHTML = cookiesNum + " Cookies";
+}
+
+function devtools() {
+  opendev()
+  console.log('devtools by daxcodes and sqcodes.')
+}
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+upgradebtn.style.opacity = 1;
+    grandmabtn.style.opacity = 1;
+    chefbtn.style.opacity = 1;
+    factorybtn.style.opacity = 1;
+    highspeedbtn.style.opacity = 1;
+    hackerbtn.style.opacity = 1;
+    robotbtn.style.opacity = 1;
+    robot2btn.style.opacity = 1;
+    thanosbtn.style.opacity = 1;
+    mysterybtn.style.opacity = 1;
+    legendbtn.style.opacity = 1;
+    bitbtn.style.opacity = 1;
+    malwarebtn.style.opacity = 1;
+    laserbtn.style.opacity = 1;
+    LegendCutterbtn.style.opacity = 1;
+    GodTLaserbtn.style.opacity = 1;
+    upgradebtn.style.pointerEvents = "all";
+    grandmabtn.style.pointerEvents = "all";
+    chefbtn.style.pointerEvents = "all";
+    factorybtn.style.pointerEvents = "all";
+    highspeedbtn.style.pointerEvents = "all";
+    hackerbtn.style.pointerEvents = "all";
+    robotbtn.style.pointerEvents = "all";
+    robot2btn.style.pointerEvents = "all";
+    thanosbtn.style.pointerEvents = "all";
+    mysterybtn.style.pointerEvents = "all";
+    legendbtn.style.pointerEvents = "all";
+    bitbtn.style.pointerEvents = "all";
+    malwarebtn.style.pointerEvents = "all";
+    laserbtn.style.pointerEvents = "all";
+    LegendCutterbtn.style.pointerEvents = "all";
+    GodTLaserbtn.style.pointerEvents = "all";

@@ -9,8 +9,8 @@
 
 
     <!-- Holidays -->
-    <!-- Halloween:
-    <a href="assets/other/holidays/Halloween/halloween.html" id="halloween">Halloween Event</a> -->
+  
+    <a href="halloween.html" id="halloween">Halloween Event</a> 
     <!-- Thanksgiving:
     <a href="assets/other/thanksgiving/thanksgiving.html" id="thanks">Thanksgiving Event</a> -->
     <!-- Christmas:
@@ -18,29 +18,25 @@
     <br/> -->
     <p id="versionControl">Cookie Version: 2.4.6</p>
     <h1> </h1>
+    <a href="https://www.google.com"><button id="savebtn">click if teacher is coming</button></a>
     <!-- Quests were removed due to bug! -->
-    <a href="https://cookie-dash.applecoders.repl.co/" target="_blank"><button id="savebtn">See the top scores!</button></a>
+    <a href="https://cookieboard.applecoders.repl.co/" target="_blank"><button id="savebtn">See the top scores!</button></a>
     <br/>
  <br>
  <div id="codes">
       <input type="password" id="bakery" placeholder="Enter Code Here!">
       <button onclick="verifyLogin()" id="saveBakery22">Enter</button>
     </div>
-    <input type="text" id="bakery1" placeholder="Bakery Name Here">
-    <button id="saveBakery">Save</button>
-    <br/>
-    <h3 id="codeText"></h3>
-    <button id="devopen" onclick="opendev()">Open Dev Tools</button>
-  </head>
-  <body id="body">
-    <h1 id="cookies">0 Cookies</h1>
-    <img src="assets/images/cookie.png" height="250px" width="250px" id="cookie" onclick="addcookie()"/>
-    <br/>
-    <button id="showUpgrades" onclick="showAllUpgrades()">Open All Upgrades..</button>
-    <br/>
-    
-    <br/>
-    <p>  </p>
+   
+<button type="button" class="collapsible">Upgrades</button>
+ 
+
+
+<div class="content">
+  
+  <br><br></br></br>
+ <p>  </p><a href="https://cookie-clicker-pro.applecoders.repl.co/">
+  <button class="button-64" role="button"><span class="text">Go Back To Old Cookie Clicker</span></button></a>
     <button id="upgradebtn" onclick="upgradefunc()">Upgrade Clicks (costs 50 Cookies)</button>
     <br/>
     <button id="grandmalol" onclick="grandma()">Hire a Grandma (costs 100 Cookies)</button>
@@ -57,7 +53,7 @@
     <br/>
     <button id="robot2" onclick="robot2()">Buy a Supreme Cookie Robot (costs 10,000 Cookies)</button>
     <br/>
-       <button id="thanos" onclick="thanosgo()">Hire thanos's fingers (costs 15,000 cookies)</button>
+    <button id="thanos" onclick="thanosgo()">Hire thanos's fingers (costs 15,000 cookies)</button>
     <br/>
     
     <button onclick="mysterymode()" id="mystery">Buy a OMEGA COOKIE ROBOT (costs 100,000 Cookies)</button>
@@ -70,20 +66,36 @@
     <br/>
     <button onclick="lasercutter()" id="laserbtn">Buy Cookie Laser Cookie Cutter (costs 1,000,000,000 Cookies)</button>
     <br>
-
+    <button onclick="legendcutter()" id="legendcookiecutterbtn">Buy LEGENDARY Cookie Cutter (costs 50,000,000,000 Cookies)</button>
     <br/>
-    <button onclick="lasercutter()" id="laserbtn">Buy Cookie Laser Cookie Cutter (costs 1,000,000,000 Cookies)</button>
-    <br>
+    <button onclick="godtlaser()" id="godtlaserbtn">Buy GOD TIER COOKIE LASER CUTTER (costs 150,000,000,000 Cookies)</button>
+ <div id="chat">
+    <h3></h3><!-- Start BawkBox Code--><script data-sil-id="633df482cac98e0013e6ecb4">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/chatroom/633df482cac98e0013e6ecb4?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-chatroom sil-widget" id="sil-widget-633df482cac98e0013e6ecb4"><a href="//bawkbox.com/install/chatroom">Public Chatroom</a></div><!-- End BawkBox Code--></div>
+</div>
+
+</div>
+    <input type="text" id="bakery1" placeholder="Bakery Name Here">
+    <button id="saveBakery">Save</button>
+    <br/>
+    <h3 id="codeText"></h3>
+    <div id="upgrades">
+      
+    </div>
+    <button id="devopen" onclick="opendev()">Open Dev Tools</button>
+  </head>
+  <body id="body">
+    <h1 id="cookies">0 Cookies</h1>
+    <img src="assets/images/cookie.png" height="250px" width="250px" id="cookie" onclick="addcookie()"/>
+    <br/>
+    
    
     <br/>
-
+    
     <br/>
-    <button onclick="lasercutter()" id="laserbtn">Buy Cookie Laser Cookie Cutter (costs 1,000,000,000 Cookies)</button>
-    <br>
-    <button onclick="newrealm()" id="realmbtn">Buy new cookie realm (costs 10,000,000,000 Cookies) not working</button>
-
+   
     <br/>
     <p id="versionControl">Cookie Clicker made by AppleCoders</p>
+   
     <img id="GoldCookie" onclick="goldclick()" src="assets/images/GoldCookie.png"/>
     <div id="dev">
     <article id="backgroundArticle">

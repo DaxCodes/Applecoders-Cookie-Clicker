@@ -31,7 +31,9 @@ body{
   text-align: center;
   font-family: creepy;
   font-weight: bold;
-  background-image: linear-gradient(to bottom, rgb(0, 238, 255), rgb(0, 17, 255));
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5C6rzYTrVIyUPCV0LSNsb-t9aO78tFMqyEixNn6hhGQgiNGgLVW5aR4OFHVCarJHASmw:https://wallpapercave.com/wp/wp661789.png&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @font-face{
@@ -665,4 +667,107 @@ color: red;
 }
 #codeText{
   font-family: Comic Sans MS;
+}
+#upgrades{
+  font-size: 14px;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 10%;
+  border: none;
+  text-align: middle;
+  outline: none;
+  font-size: 15px;
+  position: fixed;
+  right: 0%;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: ;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: black;
+  width:31%;
+  height: 500px;
+  position: fixed;
+  right: 0%;
+color:white;
+  overflow-y:auto;
+   border-radius: 10px;
+}
+#easy{
+  font-size: 45px;
+  font-family: sans-serif;
+  color: #00c04b;
+}
+#legendcookiecutterbtn:hover{
+  background: rgb(22, 22, 22);
+}
+#legendcookiecutterbtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: url("https://media.istockphoto.com/photos/light-from-avobe-picture-id180215690?k=20&m=180215690&s=612x612&w=0&h=1PdzM5tuwqDx-Aq2CrRJd-uUk4WLC4khv3Pkp6NpTUM=");
+  color: white;
+  margin: 0px;
+  opacity: 0;
+  background-size: cover;
+  pointer-events: none;
+}
+
+#godtlaserbtn:hover{
+  background: rgb(224, 255, 71);
+}
+#godtlaserbtn{
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background: url(/assets/images/dang.gif);
+  color: black;
+  margin: 0px;
+  opacity: 0;
+  background-size: cover;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-64 {
+  color: darkblue;
+  background: lightblue;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+button:{
+  background: black;
+  border: none;
+}
+#chat{
+  opacity:1;
 }
